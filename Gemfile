@@ -43,6 +43,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'faker'
   gem 'pry'
+  gem 'rb-readline'
 end
 
 group :development do
