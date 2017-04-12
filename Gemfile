@@ -42,6 +42,7 @@ group :development, :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'faker'
+  gem 'pry'
 end
 
 group :development do
