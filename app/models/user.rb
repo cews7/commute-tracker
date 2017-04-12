@@ -10,6 +10,5 @@ class User < ApplicationRecord
     user.token_expires_at = auth["credentials"]["expires_at"]
     user.save
     user
-    binding.pry
   end
 end
