@@ -27,6 +27,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'figaro'
 gem "omniauth-google-oauth2"
+gem 'geocoder'
+gem 'gmaps4rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
