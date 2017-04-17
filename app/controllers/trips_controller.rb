@@ -1,5 +1,5 @@
 class TripsController < ApplicationController
   def show
-    @commute = Trip.find_by(params[:id])
+    @commute = Trip.find(params[:id])
   end
 end
