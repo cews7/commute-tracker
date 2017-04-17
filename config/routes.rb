@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root :to => "dashboard#index"
-  resources :trips, only: [:new, :create]
+
   get '/auth/google_oauth2/callback', to: 'sessions#create'
-  delete '/logout',                   to: 'sessions#destroy'
   get '/auth/google_oauth2',          as: :login
+  delete '/logout',                   to: 'sessions#destroy'
+
+  resources :trips, only: [:new, :create, :show]
 end
