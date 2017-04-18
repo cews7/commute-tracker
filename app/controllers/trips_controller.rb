@@ -9,6 +9,11 @@ class TripsController < ApplicationController
 
   def create
     @commute = Trip.new(trip_params)
+    if @commute.save
+      redirect_to root_path
+    else
+      render :action => "new"
+    end
   end
 
   private

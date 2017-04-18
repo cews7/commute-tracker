@@ -21,7 +21,7 @@
         <div class="card-content">
           <span class="card-title black-text">New Commute</span>
           <div class="login-form">
-            <%= form_for :trip do |f| %>
+            <%= form_for @commute, url: {action: "create"} do |f| %>
             <%= f.label "commute name" %>
             <%= f.text_field :commute_name, placeholder: "Home to Work" %>
             <%= f.label "Origin Point" %>
