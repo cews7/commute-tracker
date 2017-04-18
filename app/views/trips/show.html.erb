@@ -1,0 +1,17 @@
+<div class="navbar-fixed">
+  <nav class="blue-bar no-border">
+    <div class="nav-wrapper">
+      <a class="brand-logo center">CommuteTracker</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li> <%= link_to "Welcome, #{current_user.first_name}!", root_path %></li>
+        <li> <%= link_to "Create Commute", new_trip_path %> </li>
+        <li><%= link_to "Logout", logout_path, method: :delete %></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="container center">
+  <h1><%= @commute.commute_name %></h1><br>
+  <%= @commute.address_one %><br>
+  <%= @commute.address_two %><br>
+</div>
