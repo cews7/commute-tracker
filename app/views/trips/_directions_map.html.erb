@@ -2,6 +2,6 @@
     width="300"
     height="300"
     frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=1017+Dogwood+Drive+Golden+CO
-  &destination=3301+E+1st+Ave+Denver+CO+80206">
+    src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=<%= "#{Trip.last.address_one}" %>
+  &destination=<%= "#{Trip.last.address_two}" %>">
   </iframe>

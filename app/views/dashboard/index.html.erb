@@ -1,44 +1,48 @@
 <% if current_user %>
-<div class="navbar-fixed">
-  <nav class="blue-bar no-border">
-    <div class="nav-wrapper">
-      <a class="brand-logo center">CommuteTracker</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li> <%= link_to "Welcome, #{current_user.first_name}!", root_path %></li>
-        <li> <%= link_to "Create Commute", new_trip_path %> </li>
-        <li><%= link_to "Logout", logout_path, method: :delete %></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<br>
-<br>
-<div class="container center">
-  <iframe
-  width="800"
-  height="500"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=1017+Dogwood+Drive+Golden+CO
-  &destination=3301+E+1st+Ave+Denver+CO+80206">
-</iframe>
-</div>
+<div class="background-color">
+  <div class="navbar-fixed">
+    <nav class="blue-bar no-border">
+      <div class="nav-wrapper">
+        <a class="brand-logo center">CommuteTracker</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li> <%= link_to "Welcome, #{current_user.first_name}!", root_path %></li>
+          <li> <%= link_to "Create Commute", new_trip_path %> </li>
+          <li><%= link_to "Logout", logout_path, method: :delete %></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <h5 class="center most-recent">Most Recent Commute</h5>
+  <div class="container center">
+    <iframe
+    width="800"
+    height="500"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=<%= "#{Trip.last.address_one}" %>
+    &destination=<%= "#{Trip.last.address_two}" %>">
+  </iframe>
 
-<div class="row">
-  <div class="col s12 center">
-    <div class="card proj-card">
-      <div class="card-content">
-        <h5>Past Commutes</h5>
-        <% @commutes.each do |commute| %>
-        <div class="row">
-          <div class="card">
-            <div class="card-content">
-              <p class="black-text"><%= link_to "#{commute.commute_name}", trip_path(commute) %><br>
-                <em>Origin:</em> <%= commute.address_one %> | <em>Destination:</em> <%= commute.address_two %></p>
+  <div class="row">
+    <div class="col s12 center">
+      <div class="card proj-card">
+        <div class="card-content">
+          <h5>Past Commutes</h5>
+          <% @commutes.each do |commute| %>
+          <div class="row">
+            <div class="card">
+              <div class="card-content">
+                <p class="black-text"><%= link_to "#{commute.commute_name}", trip_path(commute) %><br>
+                  <em>Origin:</em> <%= commute.address_one %> | <em>Destination:</em> <%= commute.address_two %></p>
+                </div>
               </div>
             </div>
+            <% end %>
           </div>
-          <% end %>
         </div>
       </div>
+      <% end %>
     </div>
-    <% end %>
+    <br>
+    <br>
+  </div>
+</div>
