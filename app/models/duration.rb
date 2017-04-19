@@ -1,6 +1,8 @@
 class Duration
+  attr_reader :time
+  
   def initialize(attrs = {})
-    @duration = attrs[:duration]
+    @time = attrs["legs"][0]["duration"]["text"]
   end
 
   def self.directions_with_duration(address_one, address_two)

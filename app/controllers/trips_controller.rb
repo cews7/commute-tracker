@@ -16,6 +16,12 @@ class TripsController < ApplicationController
     end
   end
 
+  def destroy
+    @delete_trip    = Trip.find(params[:id]).destroy
+    flash[:success] = "commute deleted!"
+    redirect_to request.referer 
+  end
+
   private
 
   def trip_params
