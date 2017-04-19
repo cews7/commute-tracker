@@ -1,5 +1,4 @@
-class User < ApplicationRecord
-  
+class User < ApplicationRecord  
   def self.from_omniauth(auth)
     user                  = User.find_or_create_by(uid:auth["uid"])
     user.uid              = auth["uid"]

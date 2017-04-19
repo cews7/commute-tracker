@@ -12,6 +12,7 @@
       </div>
     </nav>
   </div>
+  <% if @duration != nil %>
   <h5 class="center most-recent">Most Recent Commute</h5>
   <h6 class="center">Annual Commute Time: <%= distance_of_time_in_words(time_calculator) %></h6>
   <div class="container center">
@@ -22,6 +23,7 @@
     src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=<%= "#{Trip.last.address_one}" %>
     &destination=<%= "#{Trip.last.address_two}" %>">
   </iframe>
+  <% end %>
 
   <div class="row">
     <div class="col s12 center">
