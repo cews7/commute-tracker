@@ -1,6 +1,8 @@
 module ApplicationHelper
   def time_calculator
     split_values = @duration.split
+    hrs  = 0
+    mins = 0
     if split_values.length == 4
       hrs  = split_values[0].to_i
       mins = split_values[2].to_i
