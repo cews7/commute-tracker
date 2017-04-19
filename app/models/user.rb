@@ -1,4 +1,5 @@
-class User < ApplicationRecord  
+class User < ApplicationRecord
+  validates :uid, :provider, :first_name, :last_name, :image, :token, :token_expires_at, presence: true 
   def self.from_omniauth(auth)
     user                  = User.find_or_create_by(uid:auth["uid"])
     user.uid              = auth["uid"]
