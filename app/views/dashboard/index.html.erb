@@ -5,8 +5,8 @@
       <div class="nav-wrapper">
         <a class="brand-logo center">CommuteTracker</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li> <%= link_to "Welcome, #{current_user.first_name}!", root_path %></li>
-          <li> <%= link_to "Create Commute", new_trip_path %> </li>
+          <li><%= link_to "Welcome, #{current_user.first_name}!", root_path %></li>
+          <li><%= link_to "Create Commute", new_trip_path %> </li>
           <li><%= link_to "Logout", logout_path, method: :delete %></li>
         </ul>
       </div>
@@ -16,30 +16,30 @@
   <h5 class="center most-recent">ACT for most recently submitted is <%= distance_of_time_in_words(time_calculator_index) %></h5>
   <div class="container center">
     <%= render partial: "dashboard/directions_map" %>
-  <% end %>
+    <% end %>
 
-  <div class="row">
-    <div class="col s12 center">
-      <div class="card proj-card">
-        <div class="card-content">
-          <h5>Submitted</h5>
-          <% @commutes.each do |commute| %>
-          <div class="row">
-            <div class="card">
-              <div class="card-content">
-                <p class="black-text"><%= link_to "#{commute.commute_name}", trip_path(commute) %><br>
-                  <em>Origin:</em> <%= commute.address_one %> | <em>Destination:</em> <%= commute.address_two %></p>
+    <div class="row">
+      <div class="col s12 center">
+        <div class="card proj-card">
+          <div class="card-content">
+            <h5>Submitted</h5>
+            <% @commutes.each do |commute| %>
+            <div class="row">
+              <div class="card">
+                <div class="card-content">
+                  <p class="black-text"><%= link_to "#{commute.commute_name}", trip_path(commute) %><br>
+                    <em>Origin:</em> <%= commute.address_one %> | <em>Destination:</em> <%= commute.address_two %></p>
+                  </div>
+                  <%= link_to "Delete Commute", trip_path(commute), class: "btn btn-delete center", method: :delete %>
                 </div>
-                <%= link_to "Delete Commute", trip_path(commute), class: "btn btn-delete center", method: :delete %>
               </div>
+              <% end %>
             </div>
-            <% end %>
           </div>
         </div>
+        <% end %>
       </div>
-      <% end %>
+      <br>
+      <br>
     </div>
-    <br>
-    <br>
   </div>
-</div>
