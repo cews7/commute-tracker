@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def time_calculator
+  def time_calculator_index
     split_values = @duration.split
     hrs  = 0
     mins = 0

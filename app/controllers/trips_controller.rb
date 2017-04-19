@@ -1,6 +1,7 @@
 class TripsController < ApplicationController
   def show
     @commute = Trip.find(params[:id])
+    @duration = Duration.directions_with_duration(@commute.address_one, @commute.address_two).first.time
   end
 
   def new
@@ -19,7 +20,7 @@ class TripsController < ApplicationController
   def destroy
     @delete_trip    = Trip.find(params[:id]).destroy
     flash[:success] = "commute deleted!"
-    redirect_to request.referer 
+    redirect_to request.referer
   end
 
   private

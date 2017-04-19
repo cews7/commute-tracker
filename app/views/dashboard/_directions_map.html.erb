@@ -1,6 +1,6 @@
 <iframe
-    width="300"
-    height="300"
+    width="600"
+    height="400"
     frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=<%= "#{Trip.last.address_one}" %>
   &destination=<%= "#{Trip.last.address_two}" %>">

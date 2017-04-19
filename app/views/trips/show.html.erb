@@ -10,8 +10,17 @@
     </div>
   </nav>
 </div>
-<div class="container center">
-  <h1><%= @commute.commute_name %></h1><br>
-  <%= @commute.address_one %><br>
-  <%= @commute.address_two %><br>
+<h2 class="center">Annual Commute for <%= @commute.commute_name %> is <%= distance_of_time_in_words(time_calculator_index) %></h2><br>
+<div class="col-6 left margin-left">
+  <h3><em class="content-font show-page-title-color">Origin </em></h3><br><h5><%= @commute.address_one %></h5><br>
+  <h3><em class="content-font show-page-title-color">Destination </em></h3><br><h5><%= @commute.address_two %></h5><br>
+</div>
+<div class="col-6 right margin-right">
+  <iframe
+      width="600"
+      height="300"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=<%= "#{@commute.address_one}" %>
+    &destination=<%= "#{@commute.address_two}" %>">
+    </iframe>
 </div>

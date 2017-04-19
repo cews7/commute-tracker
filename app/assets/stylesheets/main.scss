@@ -1,5 +1,15 @@
 /*
 =======
+nav-bar
+=======
+*/
+
+.nav-bar-font {
+  font-family: 'Monoton';
+}
+
+/*
+=======
 welcome page
 =======
 */
@@ -32,7 +42,7 @@ dashboard page
 }
 
 .most-recent {
-  color: white;
+  color: #01BAEF;
 }
 
 /*
@@ -40,3 +50,30 @@ dashboard page
 new trip page
 =======
 */
+
+
+/*
+=======
+show trip page
+=======
+*/
+
+.margin-right {
+  margin-right: 100px;
+}
+
+.margin-left {
+  margin-left: 100px;
+}
+
+.heading-font {
+  font-family: 'Comfortaa';
+}
+
+.content-font {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.show-page-title-color {
+  color: #266DD3;
+}

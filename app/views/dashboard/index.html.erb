@@ -13,23 +13,16 @@
     </nav>
   </div>
   <% if @duration != nil %>
-  <h5 class="center most-recent">Most Recent Commute</h5>
-  <h6 class="center">Annual Commute Time: <%= distance_of_time_in_words(time_calculator) %></h6>
+  <h5 class="center most-recent">ACT for most recently submitted is <%= distance_of_time_in_words(time_calculator_index) %></h5>
   <div class="container center">
-    <iframe
-    width="800"
-    height="500"
-    frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/directions?key=<%="#{ENV['EMBEDDED_MAP_KEY']}"%>&origin=<%= "#{Trip.last.address_one}" %>
-    &destination=<%= "#{Trip.last.address_two}" %>">
-  </iframe>
+    <%= render partial: "dashboard/directions_map" %>
   <% end %>
 
   <div class="row">
     <div class="col s12 center">
       <div class="card proj-card">
         <div class="card-content">
-          <h5>Past Commutes</h5>
+          <h5>Submitted</h5>
           <% @commutes.each do |commute| %>
           <div class="row">
             <div class="card">
