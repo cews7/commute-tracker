@@ -47,6 +47,8 @@ group :development, :test do
   gem 'faker'
   gem 'pry'
   gem 'rb-readline'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :test do
