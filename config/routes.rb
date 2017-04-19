@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get '/auth/google_oauth2',          as: :login
   delete '/logout',                   to: 'sessions#destroy'
 
-  resources :trips, only: [:new, :create, :show]
+  resources :trips, only: [:new, :create, :show, :destroy]
 end

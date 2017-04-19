@@ -13,6 +13,7 @@
     </nav>
   </div>
   <h5 class="center most-recent">Most Recent Commute</h5>
+  <h6 class="center">Annual Commute Time: <%= distance_of_time_in_words(time_calculator) %></h6>
   <div class="container center">
     <iframe
     width="800"
@@ -34,6 +35,7 @@
                 <p class="black-text"><%= link_to "#{commute.commute_name}", trip_path(commute) %><br>
                   <em>Origin:</em> <%= commute.address_one %> | <em>Destination:</em> <%= commute.address_two %></p>
                 </div>
+                <%= link_to "Delete Commute", trip_path(commute), class: "btn btn-delete center", method: :delete %>
               </div>
             </div>
             <% end %>
