@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="color-layout">
 <head>
   <title>CommuteTracker</title>
   <%= csrf_meta_tags %>
@@ -15,16 +15,17 @@
   <ul>
     <% if !current_user %>
     <nav>
-       <div class="nav-wrapper blue-bar no-border">
-         <a class="brand-logo center">CommuteTracker</a>
-         <ul id="nav-mobile" class="left hide-on-med-and-down">
-           <li> <%= link_to "Welcome!", root_path %> </li>
-           <li><%= link_to "Sign in With Google", login_path %></li>
-         </ul>
-       </div>
-     </nav>
-     <div class="landing-image">
-     </div>
+      <div class="nav-wrapper blue-bar no-border">
+        <a class="brand-logo center nav-bar-font">CommuteTracker</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li> <%= link_to "Welcome!", root_path %> </li>
+          <li><%= link_to "Sign in With Google", login_path %></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="center">
+      <%= image_tag("bg.jpg", width:'600px', height:'650px') %>
+    </div>
     <% end %>
   </ul>
   <%= yield %>
