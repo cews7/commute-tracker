@@ -53,6 +53,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'simplecov'
 end
 
 group :development do
