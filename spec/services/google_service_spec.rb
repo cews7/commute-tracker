@@ -6,7 +6,8 @@ describe 'Google Service' do
       VCR.use_cassette("duration") do
 
         user = OpenStruct.new(
-        name: 'Eric Wahlgren-Sauro',
+        first_name: 'Eric',
+        last_name: 'Wahlgren-Sauro',
         oauth_token: ENV['GOOGLE_TOKEN']
         )
 

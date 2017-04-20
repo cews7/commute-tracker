@@ -18,7 +18,6 @@ describe "User" do
       expect(page).to have_content("Logout")
       expect(page).to have_content("Create Commute")
       expect(page).to have_content("ACT for most recently submitted is 15 days")
-      expect(page).to have_content("CommuteTracker")
     end
   end
 end
