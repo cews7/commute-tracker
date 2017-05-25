@@ -21,9 +21,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 19 Apr 2017 22:59:02 GMT
+      - Thu, 25 May 2017 17:21:03 GMT
       Expires:
-      - Thu, 20 Apr 2017 22:59:02 GMT
+      - Fri, 26 May 2017 17:21:03 GMT
       Access-Control-Allow-Origin:
       - "*"
       Server:
@@ -37,7 +37,7 @@ http_interactions:
       Cache-Control:
       - public, max-age=86400
       Age:
-      - '1369'
+      - '2'
     body:
       encoding: ASCII-8BIT
       string: |
@@ -116,7 +116,7 @@ http_interactions:
            "status" : "OK"
         }
     http_version: 
-  recorded_at: Wed, 19 Apr 2017 23:21:51 GMT
+  recorded_at: Thu, 25 May 2017 17:21:05 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/directions/json?$key=AIzaSyALpgSymBKf_07OeCqfEHLPmGdpY6fBPTo&departure_time=now&destination=6925%20east%20Dickenson%20place%20denver%20CO&mode=driving&origin=1017%20Dogwood%20Drive%20Golden%20CO
@@ -138,9 +138,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 19 Apr 2017 23:21:51 GMT
+      - Thu, 25 May 2017 17:21:05 GMT
       Expires:
-      - Thu, 20 Apr 2017 23:21:51 GMT
+      - Fri, 26 May 2017 17:21:05 GMT
       Cache-Control:
       - public, max-age=86400
       Vary:
@@ -148,7 +148,7 @@ http_interactions:
       Server:
       - mafe
       Content-Length:
-      - '4481'
+      - '4475'
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
@@ -176,7 +176,7 @@ http_interactions:
         ICAgICAgICAgICAgICAgInZhbHVlIiA6IDM3NzY3CiAgICAgICAgICAgICAg
         IH0sCiAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAg
         ICAgICAgICJ0ZXh0IiA6ICIyOSBtaW5zIiwKICAgICAgICAgICAgICAgICAg
-        InZhbHVlIiA6IDE3NDYKICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAg
+        InZhbHVlIiA6IDE3NDEKICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAg
         ICAgImVuZF9hZGRyZXNzIiA6ICI2OTI1IEUgRGlja2Vuc29uIFBsLCBEZW52
         ZXIsIENPIDgwMjI0LCBVU0EiLAogICAgICAgICAgICAgICAiZW5kX2xvY2F0
         aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgImxhdCIgOiAzOS42NzI1OTM0
@@ -236,7 +236,7 @@ http_interactions:
         InZhbHVlIiA6IDE5NwogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAg
         ICAgICAgICAgICAgICAiZHVyYXRpb24iIDogewogICAgICAgICAgICAgICAg
         ICAgICAgICAidGV4dCIgOiAiMSBtaW4iLAogICAgICAgICAgICAgICAgICAg
-        ICAgICAidmFsdWUiIDogMjMKICAgICAgICAgICAgICAgICAgICAgfSwKICAg
+        ICAgICAidmFsdWUiIDogMjIKICAgICAgICAgICAgICAgICAgICAgfSwKICAg
         ICAgICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7CiAgICAgICAg
         ICAgICAgICAgICAgICAgICJsYXQiIDogMzkuNjk1MzA3NywKICAgICAgICAg
         ICAgICAgICAgICAgICAgImxuZyIgOiAtMTA1LjI2NjQ5OTQKICAgICAgICAg
@@ -289,7 +289,7 @@ http_interactions:
         IGZ0IiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDI4CiAg
         ICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJk
         dXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6
-        ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA1
+        ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA0
         CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAg
         ICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAi
         bGF0IiA6IDM5LjcwMzQ2MTQsCiAgICAgICAgICAgICAgICAgICAgICAgICJs
@@ -311,7 +311,7 @@ http_interactions:
         ICAgInZhbHVlIiA6IDc4MjYKICAgICAgICAgICAgICAgICAgICAgfSwKICAg
         ICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAg
         ICAgICAgICAgICAgInRleHQiIDogIjUgbWlucyIsCiAgICAgICAgICAgICAg
-        ICAgICAgICAgICJ2YWx1ZSIgOiAyNzgKICAgICAgICAgICAgICAgICAgICAg
+        ICAgICAgICAgICJ2YWx1ZSIgOiAyNzcKICAgICAgICAgICAgICAgICAgICAg
         fSwKICAgICAgICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7CiAg
         ICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMzkuNzI0MDI4LAogICAg
         ICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC0xMDUuMTgxMDgxCiAgICAg
@@ -370,7 +370,7 @@ http_interactions:
         ICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1
         cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDog
         IjggbWlucyIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA0
-        NTYKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAg
+        NTQKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAg
         ICAgImVuZF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAg
         ICJsYXQiIDogMzkuNzI1NDA2OSwKICAgICAgICAgICAgICAgICAgICAgICAg
         ImxuZyIgOiAtMTA1LjAyNTI5NjUKICAgICAgICAgICAgICAgICAgICAgfSwK
@@ -397,7 +397,7 @@ http_interactions:
         IDExMDA0CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAg
         ICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAg
         ICJ0ZXh0IiA6ICI3IG1pbnMiLAogICAgICAgICAgICAgICAgICAgICAgICAi
-        dmFsdWUiIDogNDEyCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAg
+        dmFsdWUiIDogNDExCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAg
         ICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAg
         ICAgICAgICAgICAibGF0IiA6IDM5LjY3MTEwMTIsCiAgICAgICAgICAgICAg
         ICAgICAgICAgICJsbmciIDogLTEwNC45MjgyMzk0CiAgICAgICAgICAgICAg
@@ -457,8 +457,8 @@ http_interactions:
         eHQiIDogIjEuMSBtaSIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1
         ZSIgOiAxNzk2CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAg
         ICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAg
-        ICAgICJ0ZXh0IiA6ICIzIG1pbnMiLAogICAgICAgICAgICAgICAgICAgICAg
-        ICAidmFsdWUiIDogMjA5CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAg
+        ICAgICJ0ZXh0IiA6ICI0IG1pbnMiLAogICAgICAgICAgICAgICAgICAgICAg
+        ICAidmFsdWUiIDogMjEwCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAg
         ICAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAg
         ICAgICAgICAgICAgICAibGF0IiA6IDM5LjY2NzYzNDYsCiAgICAgICAgICAg
         ICAgICAgICAgICAgICJsbmciIDogLTEwNC45MDU5MTY3CiAgICAgICAgICAg
@@ -558,5 +558,5 @@ http_interactions:
         ICAgICJ3YXJuaW5ncyIgOiBbXSwKICAgICAgICAgIndheXBvaW50X29yZGVy
         IiA6IFtdCiAgICAgIH0KICAgXSwKICAgInN0YXR1cyIgOiAiT0siCn0K
     http_version: 
-  recorded_at: Wed, 19 Apr 2017 23:21:51 GMT
+  recorded_at: Thu, 25 May 2017 17:21:05 GMT
 recorded_with: VCR 3.0.3
