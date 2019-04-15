@@ -26,8 +26,6 @@ ActiveRecord::Schema.define(version: 20170415234030) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
     t.string   "uid"
     t.string   "first_name"
     t.string   "last_name"
@@ -35,6 +33,8 @@ ActiveRecord::Schema.define(version: 20170415234030) do
     t.string   "provider"
     t.string   "token"
     t.string   "token_expires_at"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end

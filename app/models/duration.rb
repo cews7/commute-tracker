@@ -1,6 +1,6 @@
 class Duration
   attr_reader :time
-  
+
   def initialize(attrs = {})
     @time = attrs["legs"][0]["duration"]["text"]
   end
