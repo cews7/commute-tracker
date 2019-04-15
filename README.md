@@ -7,4 +7,6 @@ This project is not currently in production. To run it locally, follow the steps
 4) go to the browser and type in `localhost:3000`
 
 ![img](readme_img/commutetracker.png)
+![img](readme_img/create.png)
 ![img](readme_img/dashboard.png)
+![img](readme_img/show.png)
