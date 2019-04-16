@@ -17,8 +17,8 @@ describe 'Google Service' do
 
         expect(commute_data).to be_an(Array)
         expect(commute_data[0]["bounds"]).to be_a(Hash)
-        expect(commute_data[0]["bounds"]["northeast"]["lat"]).to eq 39.7256569
-        expect(commute_data[0]["bounds"]["northeast"]["lng"]).to eq -104.9059148
+        expect(commute_data[0]["bounds"]["northeast"]["lat"]).to eq 39.7256599
+        expect(commute_data[0]["bounds"]["northeast"]["lng"]).to eq -104.9059167
       end
     end
   end
