@@ -4,7 +4,7 @@ Welcome to the Commute Tracker! This project is meant to show you your "rough" a
 
 ## Production
 
-This app is hosted on Heroku. To see in production go to https://rocky-wildwood-52755.herokuapp.com/
+This app is hosted on Heroku. To see in production go to https://commute--tracker.herokuapp.com/
 
 ## Local Use
 
